@@ -1,4 +1,23 @@
 header {
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        text-align: center; /* Center align the content inside the header */
+        background-color: #333; /* Background color for the header */
+        color: white; /* Text color for the header */
+        padding: 20px 0; /* Add some padding at the top and bottom */
+    }
+    
+    h1 {
+        margin: 0; /* Remove default margin for the heading */
+    }
+    
     display: flex;
     align-items: center;
     justify-content: center;
