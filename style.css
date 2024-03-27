@@ -1,83 +1,53 @@
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Basic Styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 960px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-/* Navigation Styling */
-nav {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.nav-links {
-    list-style: none;
-}
-
-.nav-links li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.nav-links li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Logo Styling */
-.logo {
-    float: left;
-    font-size: 1.5rem;
-}
-
-/* Sections Styling */
-section {
-    padding: 50px 0;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-/* Form Styling */
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #555;
-}
-
-/* Footer Styling */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Add your introduction here.</p>
+        </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Name</h3>
+                <p>Description of the project.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>You can reach me at your@email.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
