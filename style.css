@@ -1,68 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
 header {
-
-    
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
-    background-color: #333;
+    background-color: #72263d;
     color: white;
 }
-header p {
-    padding: 0;
+header h1 {
     margin: 0;
 }
-body
-{
-    min-height: 100vh;
-    background: #0c192c;
-}
-
-.container
-{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-.bubbles
-{
-    position: relative;
+header nav {
     display: flex;
 }
-.bubbles span
-{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    background: #4fc3dc;
-    margin: 0 4px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px #4fc3dc44,
-    0 0 50px #4fc3dc,
-    0 0 100px #4fc3dc;
-    animation: animate 15s linear infinite;
-    animation-duration: calc(10s / var());
+header nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
 }
-.bubbles span:nth-child(even)
-{
-    background: #ff2d75;
-    box-shadow: 0 0 0 10px #ff2d7544,
-    0 0 50px #ff2d75,
-    0 0 100px #ff2d75;  
-
-
+header nav a:hover {
+    background-color: #555;
 }
-@keyframes animate
-{
-    0%
-    {
-        transform: translateY(100vh) scale(0);
-    }
-    100%
-    {
-        transform: translateY(-10vh) scale(1);
-    }
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+main aside {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+main aside h2 {
+    margin-top: 0;
+}
+main aside ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+main aside ul li {
+    margin: 10px 0;
+}
+main aside ul li a {
+    color: #333;
+    text-decoration: none;
+}
+main aside ul li a:hover {
+    text-decoration: underline;
+}
+main section {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+main section h2 {
+    margin-top: 0;
+}
+main section article {
+    margin: 20px 0;
+}
+main section article h3 {
+    margin: 0;
+}
+main section article p {
+    margin: 10px 0;
 }
 footer {
     display: flex;
