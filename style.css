@@ -1,23 +1,52 @@
-
-@keyframes animate
-{
-    0%
-    {
-        transform: translateY(100vh) scale(0);
-    }
-    100%
-    {
-        transform: translateY(-10vh) scale(1);
-    }
-}
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-footer p {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00aced;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#tweet-container {
+    padding: 20px;
+}
+
+.tweet {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#tweet-form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#tweet-text {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+#tweet-button {
+    width: 60px;
+    padding: 10px;
+    border: none;
+    background-color: #00aced;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
 }
