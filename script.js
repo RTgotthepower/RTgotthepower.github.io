@@ -1,3 +1,6 @@
-window.onload = function() {
-    document.getElementById('year').innerHTML = new Date().getFullYear();
+function main(){
+    console.log("Hello World");
+    
 }
+
+main();
