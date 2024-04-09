@@ -1,39 +1,77 @@
-body {
-    background-color: #8B4513; /* Maroon background color */
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 header {
-    text-align: center;
-    padding: 20px 0;
-}
 
-header h1 {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+header p {
+    padding: 0;
     margin: 0;
 }
+body
+{
+    min-height: 100vh;
+    background: #0c192c;
+}
 
-main {
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles
+{
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
 }
-
-.widget {
-    background-color: rgba(255, 255, 255, 0.1); /* White with opacity */
-    border: 1px solid white; /* White borders */
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    width: 300px;
-    text-align: center;
+.bubbles span
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(10s / var());
 }
+.bubbles span:nth-child(even)
+{
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;  
 
+
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
 footer {
-    text-align: center;
-    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+footer p {
+    margin: 0;
 }
