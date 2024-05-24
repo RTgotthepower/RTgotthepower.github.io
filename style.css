@@ -6,7 +6,7 @@
     }
 
     .navbar{
-        background: #931910;
+        background: #131313;
         height: 80px;
         display: flex;
         justify-content: center;
@@ -29,8 +29,8 @@
     }
 
     #navbar__logo{
-        background-color: #931910;
-        background-image: linear-gradient(to top, #d4d1d2 0%, #ecb19f 100%);
+        background-color: #ff8177;
+        background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
         background-size: 100%;
         -webkit-background-clip: text;
         -moz-background-clip: text;
@@ -87,17 +87,17 @@
         border: none;
         outline: none;
         border-radius: 4px;
-        background: #931910;
+        background: #f77062;
         color: #fff
     }
 
     .button:hover{
-        background: #931910;
+        background: #f77062;
         transition: all 0.3s ease;
     }
 
     .navbar__links:hover{
-        color: #931910;
+        color: #f77062;
         transition: all 0.3s ease;
     }
 
@@ -209,7 +209,7 @@
             justify-self: center;
             margin: 0 auto;
             height: 90vh;
-            background-color: #931910;
+            background-color: #141414;
             z-index: 1;
             width: 100%;
             max-width: 1300px;
@@ -218,8 +218,8 @@
 
         .main__content h1{
             font-size: 4rem;
-            background-color: #931910;
-            background-image: linear-gradient(to top, #ff0844 0%, #931910; 100%);
+            background-color: #ff8177;
+            background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
             background-size: 100%;
             -webkit-background-clip: text;
             -moz-background-clip: text;
