@@ -92,12 +92,12 @@
     }
 
     .button:hover{
-        background: #c9c6c6;;
+        background: #7e0e0e;;
         transition: all 0.3s ease;
     }
 
     .navbar__links:hover{
-        color: #c9c6c6;;
+        color: #7c2525;;
         transition: all 0.3s ease;
     }
 
@@ -218,8 +218,8 @@
 
         .main__content h1{
             font-size: 4rem;
-            background-color: #ff8177;
-            background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+            background-color: #651610;
+            background-image: linear-gradient(to top, #c9c6c6 0%, #262524 100%);
             background-size: 100%;
             -webkit-background-clip: text;
             -moz-background-clip: text;
